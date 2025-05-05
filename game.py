@@ -29,8 +29,8 @@ except:
     level_change_sound = pygame.mixer.Sound(buffer=silent_sound)
 
 class Player(pygame.sprite.Sprite):
-    def _init_(self):
-        super()._init_()
+    def __init__(self):
+        super().__init__()
         self.sprites = []
         self.animation_frames = 4
         
@@ -216,5 +216,5 @@ def main():
     pygame.quit()
     sys.exit()
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     main()
